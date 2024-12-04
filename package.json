@@ -1,0 +1,34 @@
+{
+  "name": "multi-extends",
+  "version": "0.0.1",
+  "description": "ts multi extends",
+  "main": "lib/main.js",
+  "scripts": {
+    "prepublish": "pnpm build",
+    "compile": "tsc",
+    "build": "rimraf lib tsconfig.tsbuildinfo && pnpm compile"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "class",
+    "multi-extends"
+  ],
+  "author": "xiamu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiamu33/ts-multi-extends.git"
+  },
+  "homepage": "https://github.com/xiamu33/ts-multi-extends#readme",
+  "bugs": {
+    "url": "https://github.com/xiamu33/ts-multi-extends/issues"
+  }
+}
