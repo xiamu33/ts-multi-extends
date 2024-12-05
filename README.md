@@ -1,7 +1,14 @@
+## Installation
+
+```sh
+npm i multi-extends
+```
 
 ## Usage
 
 ```typescript
+import { multiExtends } from "multi-extends";
+
 class Animal {
   constructor(name?: string) {
     if (name) this.name = name;
@@ -39,7 +46,7 @@ function Decorator(): MethodDecorator {
 
 class Unicorn extends multiExtends(Animal, [mixinRun, mixinFly]) {
   constructor() {
-    super('unicorn')
+    super("unicorn");
   }
   // ...do something
 }
